@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="/scripts/extension.js" type="text/javascript"></script>
+</head>
+<body>
+    <style>
+      .container {
+		    min-height: 20px;
+        width: 380px;
+        background: white;
+      }
+      body {
+        font-family: Verdana, Tahoma, sans-serif;
+        font-size: 100%;
+      }
+    </style>
+    <div class="container">
+      <h4>AWS console header colors</h4>
+      <form>
+        <table class="table" id="contentTable">
+          <thead>
+            <tr>
+              <th scope="col">Country</th>
+              <th scope="col">Region</th>
+              <th scope="col">Code</th>
+              <th scope="col">AZs</th>
+              <th scope="col">Color</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+        <p  style="text-align: center;">
+          <button type="submit" id="saveBtn" class="btn btn-primary mb-4">Save changes</button>
+          <!-- <button type="submit" id="restoreBtn" class="btn btn-secondary mb-4">Restore default</button> -->
+        </p>
+      </form>
+      <hr/>
+      <p>
+        This plugin is sponsored by <a href="http://www.capcod.eu" target="_blank">CAPCOD</a>, an AWS partner :
+      </p>
+      <div style="text-align:left">
+        <a href="http://www.capcod.eu" target="_blank"><img src="capcod.png" width="150" /></a>
+      </div>
+    </div>
+    <script src="/scripts/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script src="/scripts/content.js" type="text/javascript"></script>
+</body>
+</html>
