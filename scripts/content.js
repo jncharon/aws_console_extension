@@ -1,6 +1,6 @@
-var region = $('#nav-regionMenu').text().trim();
-if (region != null) {
-  console.log("Region : -" + region + "-");
+var code = $("meta[name='awsc-mezz-region']").attr('content');
+if (code != null) {
+  console.log("Region : -" + code + "-");
 }
 
 function loadData() {
@@ -25,9 +25,9 @@ function loadData() {
 }
 
 function setupColors(regionArray) {
-  if (regionArray  != undefined && region != undefined) {
+  if (regionArray  != undefined && code != undefined) {
     console.log('Applying colors');
-    var regionObj = regionArray.find(x => x.name === region);
+    var regionObj = regionArray.find(x => x.code === code );
     if (regionObj) {
       var newRegionName = `${regionObj.name} (${regionObj.code})`;
       var iconPath = buildFlagUrl(regionObj.country);
