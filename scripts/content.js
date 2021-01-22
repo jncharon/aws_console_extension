@@ -1,4 +1,4 @@
-var region = $('#nav-regionMenu').text().trim();
+var region = $('#awsc-navigation__more-menu--list > li:nth-child(2) > div > button > span.KFpjKKVRktMFh3wa-eKuZ > span.ThRjn7o-KwO0459UzmvoU.w8Kxy2XztOAkWobGpdJLt').text().trim();
 if (region != null) {
   console.log("Region : -" + region + "-");
 }
@@ -32,8 +32,8 @@ function setupColors(regionArray) {
       var newRegionName = `${regionObj.name} (${regionObj.code})`;
       var iconPath = buildFlagUrl(regionObj.country);
 
-      var regionNameTagId = '#nav-regionMenu .nav-elt-label';
-      ['#awsgnav', '#nav-menubar','#nav-menu-right','.nav-menu'].forEach(el => {
+      var regionNameTagId = '#awsc-navigation__more-menu--list > li:nth-child(2) > div > button > span.KFpjKKVRktMFh3wa-eKuZ > span.ThRjn7o-KwO0459UzmvoU.w8Kxy2XztOAkWobGpdJLt';
+      ['#awsc-nav-header','#awsc-concierge-input'].forEach(el => {
         this.setbackgroundColor(el, regionObj.color);
       })
       $(regionNameTagId).css('vertical-align', 'middle');
