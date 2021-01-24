@@ -7,7 +7,7 @@
     },
     "manifest_version": 2,
     "name": "AWS console regions color",
-    "description": "Changes the AWS console header color depending on the region you selected. This extension uses the Country Flags Icon Pack from Iconscout.",
+    "description": "Changes the AWS console header color depending on the region you selected. We use the Flags Icon Pack from Iconscout.",
     "version": "0.9",
     "browser_action": {
         "default_icon": "favicon.png",
